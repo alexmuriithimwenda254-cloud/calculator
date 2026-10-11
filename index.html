@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator">
+    <header class="top">
+      <div class="brand">
+        <span class="logo">✦</span>
+        <div><h1>GlowCalc</h1><p>Simple. Smart. Stylish.</p></div>
+      </div>
+      <button id="themeBtn" class="theme-btn" aria-label="Toggle theme" title="Toggle theme">☾</button>
+    </header>
+
+    <section class="screen" aria-label="Calculator display">
+      <div id="history" class="history"></div>
+      <div id="display" class="display" aria-live="polite">0</div>
+    </section>
+
+    <section class="keys" aria-label="Calculator buttons">
+      <button class="key utility" data-action="clear">AC</button>
+      <button class="key utility" data-action="delete">⌫</button>
+      <button class="key utility" data-value="%">%</button>
+      <button class="key operator" data-value="÷">÷</button>
+
+      <button class="key" data-value="7">7</button>
+      <button class="key" data-value="8">8</button>
+      <button class="key" data-value="9">9</button>
+      <button class="key operator" data-value="×">×</button>
+
+      <button class="key" data-value="4">4</button>
+      <button class="key" data-value="5">5</button>
+      <button class="key" data-value="6">6</button>
+      <button class="key operator" data-value="−">−</button>
+
+      <button class="key" data-value="1">1</button>
+      <button class="key" data-value="2">2</button>
+      <button class="key" data-value="3">3</button>
+      <button class="key operator" data-value="+">+</button>
+
+      <button class="key utility" data-action="sign">+/−</button>
+      <button class="key" data-value="0">0</button>
+      <button class="key" data-value=".">.</button>
+      <button class="key equals" data-action="equals">=</button>
+    </section>
+    <footer>Made for learning <span>♥</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
